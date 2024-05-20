@@ -1,55 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Empresa de Construcción XYZ</title>
+    <link rel="stylesheet" href="../css/principal.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Excavaciones Abenoza</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
+        <div class="containerheader">
+            <h1>Empresa de Construcción XYZ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="jumbotron">
+        <section id="hero">
             <div class="container">
-                <h1 class="display-4">Bienvenido a Excavaciones Abenoza</h1>
-                <p class="lead">Estamos en construcci n de una plantilla para nuestro sitio web.</p>
-                <hr class="my-4">
-                <p>Lo sentimos, no tenemos contenido todav a.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Haznos saber que quieres trabajar con nosotros</a>
-                </p>
+                <h2>Construimos tus sueños</h2>
+                <p>Proyectos de construcción de alta calidad con un enfoque en la satisfacción del cliente.</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una empresa con más de 20 años de experiencia en el sector de la construcción, comprometidos con la excelencia y la innovación.</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Diseño Arquitectónico</h3>
+                        <p>Proyectos innovadores y personalizados para cada cliente.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Construcción de Edificios</h3>
+                        <p>Construcción de alta calidad con los mejores materiales.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Renovaciones</h3>
+                        <p>Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <p>Galería de algunos de nuestros proyectos más destacados.</p>
+                <div class="gallery">
+                    <img src="../IMG/project1.jpg" alt="Proyecto 1">
+                    <img src="../IMG/project2.jpg" alt="Proyecto 2">
+                    <img src="../IMG/project3.jpg" alt="Proyecto 3">
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <div class="testimonial-cards">
+                    <div class="card">
+                        <p>"Excelente servicio y calidad en la construcción. Muy recomendados!" - Cliente A</p>
+                    </div>
+                    <div class="card">
+                        <p>"Profesionales y atentos a cada detalle. Muy satisfecho con el resultado." - Cliente B</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Ponte en contacto con nosotros para más información o cotizaciones.</p>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p class="lead">Todos los derechos reservados</p>
+            <p>&copy; 2024 Empresa de Construcción XYZ. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../dist/script.js"></script>
 </body>
 </html>
