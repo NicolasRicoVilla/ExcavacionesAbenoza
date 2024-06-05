@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333333;
-    background-color: #f4f4f4;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
 }
 
 /*ESTILOS DIVS*/
@@ -29,27 +29,31 @@ body {
 /*ESTILOS HEADER*/
 
 header {
-    background: #002147;
+    background: #2c2c2c;
     color: #ffffff;
     padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 header h1 {
     text-align: center;
     margin-bottom: 10px;
-    color: #FF9900;
+    color: #ff9900;
+}
+
+.nav-link {
+    color: white !important;
 }
 
 nav ul {
     list-style: none;
     text-align: center;
-    color: #ffffff;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
-    color: #ffffff;
 }
 
 nav ul li a {
@@ -79,14 +83,14 @@ nav ul li a {
 
 section {
     padding: 60px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
 }
 
 section h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #002147;
+    color: #ff9900;
 }
 
 .service-cards,
@@ -97,14 +101,21 @@ section h2 {
 }
 
 .card {
-    background: #ffffff;
+    background: #2c2c2c;
+    color: #e0e0e0;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     flex: 1;
     min-width: 250px;
     max-width: 30%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
 }
 
 .gallery {
@@ -135,8 +146,10 @@ form input,
 form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 5px;
+    background: #2c2c2c;
+    color: #e0e0e0;
 }
 
 form button {
@@ -144,18 +157,18 @@ form button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #002147;
+    background: #ff9900;
     color: #fff;
     font-size: 1.1em;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #FF9900;
+    background: #ff4500;
 }
 
 footer {
-    background: #002147;
+    background: #2c2c2c;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -178,13 +191,13 @@ footer p {
 }
 
 #about .contact-info a {
-    color: #002147;
+    color: #ff9900;
     text-decoration: none;
 }
 
 #about .contact-info a:hover {
     text-decoration: underline;
-    color: #FF9900;
+    color: #ff4500;
 }
 
 #about .services-list {

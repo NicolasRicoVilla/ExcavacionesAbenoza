@@ -1,7 +1,6 @@
 "use strict";
-// src/script.ts
 document.addEventListener('DOMContentLoaded', function () {
-    //Desplazamiento para los enlaces de navegacion
+    // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
             var _a;
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-    // Animacion de aparacion de las secciones
+    // Animation for section appearance
     var sections = document.querySelectorAll('section');
     var options = {
         threshold: 0.1

@@ -4,116 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excavaciones Abenoza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
     <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-    <header>
-        <div class="containerheader">
-            <h1>Excavaciones Abenoza</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#testimonials">Testimonios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="#galery">Galeria</a></li>
-                </ul>
-            </nav>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1><b>Excavaciones Abenoza</b></h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#gallery">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#team">Nuestro Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#faq">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" class="text-center text-white d-flex align-items-center" style="background-image: url('../IMG/hero.jpg'); height: 400px; background-size: cover; background-position: center;">
             <div class="container">
-                <h2>Construimos tus sueños</h2>
-                <p>Proyectos de construcción de alta calidad con un enfoque en la satisfacción del cliente.</p>
+                <h2 class="display-4" data-aos="fade-up">Construimos tus sueños</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Proyectos de construcción de alta calidad con un enfoque en la satisfacción del cliente.</p>
             </div>
         </section>
-        <section id="about">
+        <section id="about" class="py-5 bg-dark text-light">
             <div class="container">
-                <h2>Sobre Nosotros</h2>
+                <h2><b>Sobre Nosotros</b></h2>
                 <p>Excavaciones Abenoza y Portolés es una empresa fundada por Julio Abenoza y Julio Portolés, dedicada a ofrecer servicios de alta calidad en varios sectores. Contamos con una nave y oficina en Montañana (Zaragoza) para atenderle mejor. Puede contactarnos a través de:</p>
-                <ul class="contact-info">
-                    <li>Teléfono: <a href="tel:+34653757733">653 75 77 33 (Julio Abenoza)</a></li>
-                    <li>Teléfono: <a href="tel:+34653757730">653 75 77 30 (Julio Portolés)</a></li>
-                </ul>            </div>
+                <ul class="list-unstyled">
+                    <li>Teléfono: <a href="tel:+34653757733" class="text-light">653 75 77 33 (Julio Abenoza)</a></li>
+                    <li>Teléfono: <a href="tel:+34653757730" class="text-light">653 75 77 30 (Julio Portolés)</a></li>
+                </ul>
+            </div>
         </section>
-        <section id="services">
+        <section id="services" class="py-5 bg-secondary text-white">
             <div class="container">
-                <h2>Servicios</h2>
-                <div class="service-cards">
-                    <div class="card">
-                        <h3>Diseño Arquitectónico</h3>
-                        <p>Proyectos innovadores y personalizados para cada cliente.</p>
+                <h2><b>Servicios</b></h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up">
+                            <div class="card-body">
+                                <h3 class="card-title">Diseño Arquitectónico</h3>
+                                <p class="card-text">Proyectos innovadores y personalizados para cada cliente.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Construcción de Edificios</h3>
-                        <p>Construcción de alta calidad con los mejores materiales.</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <h3 class="card-title">Construcción de Edificios</h3>
+                                <p class="card-text">Construcción de alta calidad con los mejores materiales.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Renovaciones</h3>
-                        <p>Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <h3 class="card-title">Renovaciones</h3>
+                                <p class="card-text">Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Demoliciones</h3>
-                        <p>Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up">
+                            <div class="card-body">
+                                <h3 class="card-title">Demoliciones</h3>
+                                <p class="card-text">Realizamos demoliciones de manera segura y eficiente.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Movimiento de tierras</h3>
-                        <p>Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <h3 class="card-title">Movimiento de tierras</h3>
+                                <p class="card-text">Preparación de terrenos para la construcción.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Nivelaciones</h3>
-                        <p>Transformamos espacios antiguos en áreas modernas y funcionales.</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <h3 class="card-title">Nivelaciones</h3>
+                                <p class="card-text">Aseguramos superficies niveladas y estables.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="py-5 bg-dark text-light">
             <div class="container">
                 <h2>Proyectos</h2>
                 <p>Galería de algunos de nuestros proyectos más destacados.</p>
-                <div class="gallery">
-                    <img src="../IMG/project1.jpg" alt="Proyecto 1">
-                    <img src="../IMG/project2.jpg" alt="Proyecto 2">
-                    <img src="../IMG/project3.jpg" alt="Proyecto 3">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="../img/imagen1.png" alt="Proyecto 1" class="img-fluid rounded shadow-sm" data-aos="fade-in">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../img/imagen2.jpg" alt="Proyecto 2" class="img-fluid rounded shadow-sm" data-aos="fade-in" data-aos-delay="100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../img/imagen3.jpeg" alt="Proyecto 3" class="img-fluid rounded shadow-sm" data-aos="fade-in" data-aos-delay="200">
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="testimonials">
+        <section id="testimonials" class="py-5 bg-secondary text-white">
             <div class="container">
                 <h2>Testimonios</h2>
-                <div class="testimonial-cards">
-                    <div class="card">
-                        <p>"Excelente servicio y calidad en la construcción. Muy recomendados!" - Cliente A</p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-secondary text-white" data-aos="fade-right">
+                            <div class="card-body">
+                                <p>"Excelente servicio y calidad en la construcción. Muy recomendados!" - Cliente A</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <p>"Profesionales y atentos a cada detalle. Muy satisfecho con el resultado." - Cliente B</p>
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-secondary text-white" data-aos="fade-left">
+                            <div class="card-body">
+                                <p>"Profesionales y atentos a cada detalle. Muy satisfecho con el resultado." - Cliente B</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-secondary text-white" data-aos="fade-right">
+                            <div class="card-body">
+                                <p>"La mejor empresa de construcción con la que he trabajado. Muy recomendados!" - Cliente C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-secondary text-white" data-aos="fade-left">
+                            <div class="card-body">
+                                <p>"Muy profesionales y entregados. El resultado superó nuestras expectativas." - Cliente D</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="team" class="py-5 bg-dark text-light">
+            <div class="container">
+                <h2>Nuestro Equipo</h2>
+                <p>Conoce a los profesionales detrás de nuestros proyectos.</p>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 team-card bg-secondary text-white" data-aos="fade-up">
+                            <img src="../img/perfil-1.png" class="card-img-top" alt="Miembro del Equipo 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Julio Abenoza</h5>
+                                <p class="card-text">Fundador y Director General.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 team-card bg-secondary text-white" data-aos="fade-up" data-aos-delay="100">
+                            <img src="../img/perfil-1.png" class="card-img-top" alt="Miembro del Equipo 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Julio Portolés</h5>
+                                <p class="card-text">Co-fundador y Director de Operaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 team-card bg-secondary text-white" data-aos="fade-up" data-aos-delay="200">
+                            <img src="../img/perfil-1.png" class="card-img-top" alt="Miembro del Equipo 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ana Martínez</h5>
+                                <p class="card-text">Arquitecta Jefe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 team-card bg-secondary text-white" data-aos="fade-up" data-aos-delay="300">
+                            <img src="../img/perfil-1.png" class="card-img-top" alt="Miembro del Equipo 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos López</h5>
+                                <p class="card-text">Ingeniero Civil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="py-5 bg-secondary text-white">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                    <div class="card bg-dark text-light">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cuánto tiempo tarda un proyecto típico?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                La duración de un proyecto depende de su tamaño y complejidad. Un proyecto típico puede tardar de unos pocos meses a un año.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark text-light">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Ofrecen servicios de renovación?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                Sí, ofrecemos servicios completos de renovación para transformar espacios antiguos en áreas modernas y funcionales.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark text-light">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-light collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuál es su área de servicio?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                Servimos a clientes en toda la región de Zaragoza y sus alrededores.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5 bg-dark text-light">
             <div class="container">
                 <h2>Contacto</h2>
                 <p>Ponte en contacto con nosotros para más información o cotizaciones.</p>
                 <form>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Empresa de Construcción XYZ. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Excavaciones Abenoza. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../dist/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>

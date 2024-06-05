@@ -1,9 +1,7 @@
 // src/script.ts
 
 document.addEventListener('DOMContentLoaded', () => {
-
-
-    //Desplazamiento para los enlaces de navegacion
+    // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', (e: Event) => {
             e.preventDefault();
@@ -16,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Animacion de aparacion de las secciones
+    // Animation for section appearance
     const sections = document.querySelectorAll('section');
     const options = {
         threshold: 0.1
